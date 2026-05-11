@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--gold:#C9922A;--gold2:#E8B84B;--gold-pale:#FDF6E3;--maroon:#7B1C3E;--maroon2:#A0264F;--silver:#8C9DB5;--silver2:#B8C8DC;--cream:#FEFCF7;--white:#FFFFFF;--charcoal:#1C1C2E;--grey:#6B7280;--grey2:#E5E7EB;--green:#25D366;--shadow:0 4px 24px rgba(0,0,0,0.09);--shadow-lg:0 12px 48px rgba(0,0,0,0.14);--r:14px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:#f0ece4;color:var(--charcoal);overflow-x:hidden}
+h1,h2,h3{font-family:'Playfair Display',serif}
+button{font-family:'DM Sans',sans-serif;cursor:pointer}
+input,select,textarea{font-family:'DM Sans',sans-serif}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-thumb{background:var(--grey2);border-radius:4px}
+
+/* App shell + preview toggle */
+.appShell{min-height:100vh}
+.previewToggle{position:fixed;top:10px;right:10px;z-index:9999;display:flex;gap:6px;background:rgba(255,255,255,.72);border:1px solid rgba(0,0,0,.06);backdrop-filter:blur(10px);padding:6px;border-radius:999px;box-shadow:0 6px 24px rgba(0,0,0,.08)}
+.previewBtn{border:none;background:transparent;padding:7px 10px;border-radius:999px;font-size:12px;font-weight:700;color:var(--grey);transition:background .2s,color .2s}
+.previewBtn:hover{background:rgba(0,0,0,.06);color:var(--charcoal)}
+.previewBtnActive{background:linear-gradient(135deg,var(--maroon),var(--maroon2));color:#fff}
+
+@media (max-width:540px){
+  .previewToggle{top:auto;bottom:90px;right:12px}
+}

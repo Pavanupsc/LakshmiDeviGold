@@ -1,0 +1,14 @@
+{
+  "name": "lakshmi-devi-react",
+  "private": true,
+  "description": "Monorepo root — CRA app lives in workspace lakshmi-devi",
+  "workspaces": [
+    "lakshmi-devi"
+  ],
+  "scripts": {
+    "dev": "npm run start -w lakshmi-devi",
+    "start": "npm run start -w lakshmi-devi",
+    "build": "npm run build -w lakshmi-devi",
+    "test": "npm run test -w lakshmi-devi"
+  }
+}
