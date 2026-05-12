@@ -9,6 +9,7 @@
     "dev": "npm run start -w lakshmi-devi",
     "start": "npm run start -w lakshmi-devi",
     "build": "npm run build -w lakshmi-devi",
+    "preview": "npm run preview -w lakshmi-devi",
     "test": "npm run test -w lakshmi-devi"
   }
 }
