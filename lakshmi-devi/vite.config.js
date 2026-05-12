@@ -5,7 +5,9 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist',
+    // Repo root `dist/` — matches Render "Publish directory: dist" for monorepo layouts
+    outDir: '../dist',
+    emptyOutDir: true,
     sourcemap: false,
   },
   test: {
